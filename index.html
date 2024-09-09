@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <header class="body-font sticky top-0">
+      <div
+        class="bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center z-50"
+      >
+        <a class="flex title-font font-medium items-center mb-4 md:mb-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 h-10 bg-blue-500 rounded-full text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64"
+            />
+          </svg>
+          <span class="ml-3 text-xl">Iowa State</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+          <a href="cities.html" class="mr-5 hover:text-gray-900">Citys</a>
+          <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+          <div class="relative mt-4 md:mt-0">
+            <div class="flex items-center">
+              <span onclick="toggleDarkMode()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    id="dark-icon"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                  />
+                  <path
+                    id="light-icon"
+                    class="hidden"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="body-font relative">
+      <div class="min-h-screen grid grid-cols-1">
+        <div class="relative min-h-[100px] sm:block hero-container">
+          <div class="absolute inset-0">
+            <script
+              type="module"
+              src="https://unpkg.com/@splinetool/viewer@1.9.25/build/spline-viewer.js"
+            ></script>
+            <spline-viewer
+              url="https://prod.spline.design/iVFfKSjg8whvJclY/scene.splinecode"
+            ></spline-viewer>
+          </div>
+          <div
+            class="hero-container mt-20 flex flex-col items-center text-center z-10"
+          >
+            <h1
+              id="custom-font"
+              class="title-font md:text-6xl sm:text-5xl text-4xl font-medium text-gray-900"
+            >
+              Welcome to Iowa
+            </h1>
+            <div class="mt-4 sm:mt-6 ml-0 sm:ml-44">
+              <h1 class="sm:text-4xl text-3xl text-gray-900">
+                Science with a Vision
+              </h1>
+              <h3
+                id="custom-font"
+                class="md:block hidden text-gray-600 dark:text-white-200 pl-0 sm:pl-20 mt-2"
+              >
+                Hover the owl head and keep press right click
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap lg:w-4/5 mx-auto">
+            <div
+              class="relative lg:w-1/2 w-full lg:h-auto h-64 rounded overflow-hidden"
+            >
+              <img
+                alt="Iowa"
+                src="../../../assets/Iowa-state.jpg"
+                class="w-full h-auto object-cover object-center rounded-lg"
+              />
+            </div>
+            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+              <h2
+                class="text-sm title-font tracking-widest text-gray-500 dark:text-gray-400"
+              >
+                City of Joy
+              </h2>
+              <h1 class="text-3xl title-font font-medium mb-1 text-gray-900">
+                Iowa State
+              </h1>
+              <p class="leading-relaxed pt-6 text-gray-600">
+                Iowa, located in the Midwestern region of the United States, is
+                known for its rich agricultural heritage and vibrant cultural
+                scene. The state features expansive farmlands, historic small
+                towns, and a commitment to education and innovation. Iowa offers
+                a blend of natural beauty and bustling urban centers, making it
+                a unique and dynamic place to live and visit.
+              </p>
+              <div class="pt-3 text-gray-600">
+                <ol class="list-decimal pl-5 mb-2">
+                  <li>Population: Over 3 million</li>
+                  <li>Capital: Des Moines</li>
+                  <li>
+                    Known for: Agriculture, particularly corn and soybeans
+                  </li>
+                </ol>
+                <ul class="list-disc pl-5 mb-4">
+                  <li>Historic landmarks such as the Iowa State Capitol</li>
+                  <li>Vibrant cultural festivals and fairs</li>
+                  <li>Beautiful natural parks and recreational areas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-gray-600 body-font mt-8">
+      <div class="container px-5 mx-auto">
+        <div class="text-center mb-20">
+          <h1 class="text-2xl sm:text-3xl font-medium text-gray-900 mb-4">
+            Discover the Beauty of Iowa
+          </h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            Iowa, known for its picturesque landscapes and charming small towns,
+            offers a unique blend of natural beauty and vibrant culture. From
+            rolling farmlands to bustling urban centers, Iowa is a place where
+            tradition meets modernity.
+          </p>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                class="text-blue-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium"> Rolling Farmlands </span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                class="text-blue-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium"> Charming Small Towns </span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                class="text-blue-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">
+                Vibrant Cultural Scene
+              </span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                class="text-blue-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">
+                Scenic Trails and Parks
+              </span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                class="text-blue-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium"> Historical Landmarks </span>
+            </div>
+          </div>
+          <div class="p-2 sm:w-1/2 w-full">
+            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="3"
+                class="text-blue-500 w-6 h-6 flex-shrink-0 mr-4"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                <path d="M22 4L12 14.01l-3-3"></path>
+              </svg>
+              <span class="title-font font-medium">Friendly Communities </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+          <div class="sm:w-1/2 mb-10 px-4 cursor-pointer">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                class="object-cover object-center h-full w-full"
+                src="city1.jpg"
+              />
+            </div>
+            <div class="flex-grow pt-6">
+              <h2 class="text-lg title-font font-medium mb-2">City 1</h2>
+              <p class="leading-relaxed text-base">Description for city 1.</p>
+              <a
+                target="_blank"
+                href="https://example.com/city1"
+                class="mt-3 text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="sm:w-1/2 mb-10 px-4 cursor-pointer">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                class="object-cover object-center h-full w-full"
+                src="city2.jpg"
+              />
+            </div>
+            <div class="flex-grow pt-6">
+              <h2 class="text-lg title-font font-medium mb-2">City 2</h2>
+              <p class="leading-relaxed text-base">Description for city 2.</p>
+              <a
+                target="_blank"
+                href="https://example.com/city2"
+                class="mt-3 text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="sm:w-1/2 mb-10 px-4 cursor-pointer">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img
+                class="object-cover object-center h-full w-full"
+                src="city3.jpg"
+              />
+            </div>
+            <div class="flex-grow pt-6">
+              <h2 class="text-lg title-font font-medium mb-2">City 3</h2>
+              <p class="leading-relaxed text-base">Description for city 3.</p>
+              <a
+                target="_blank"
+                href="https://example.com/city3"
+                class="mt-3 text-blue-500 inline-flex items-center"
+                >Learn More
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark");
+        const darkIcon = document.getElementById("dark-icon");
+        const lightIcon = document.getElementById("light-icon");
+        darkIcon.classList.toggle("hidden");
+        lightIcon.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+  <footer class="body-font">
+    <div
+      class="px-5 py-8 hero-container mx-auto flex items-center sm:flex-row flex-col"
+    >
+      <a
+        class="flex title-font font-medium items-center md:justify-start justify-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-10 bg-blue-500 rounded-full text-white"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64"
+          />
+        </svg>
+
+        <span class="ml-3 text-xl">Iowa State</span>
+      </a>
+
+      <p
+        class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+      >
+        All images are Creative Commons free:
+        <a
+          href="https://www.pexels.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Pexels</a
+        >
+      </p>
+      <p
+        class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+      >
+        Information sourced from the USA Census website
+        <a
+          href="https://www.census.gov"
+          target="_blank"
+          rel="noopener noreferrer"
+          >census.gov</a
+        >
+      </p>
+
+      <span
+        class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+      >
+        <a
+          class="ml-3"
+          target="_blank"
+          href="https://linkedin.com/in/reneafranco"
+        >
+          <svg
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="0"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+            ></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</html>

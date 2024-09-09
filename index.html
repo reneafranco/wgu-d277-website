@@ -30,11 +30,26 @@
           <span class="ml-3 text-xl">Iowa State</span>
         </a>
         <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+          class="md:ml-auto flex flex-wrap mx-2 items-center text-base justify-center"
         >
-          <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
-          <a href="cities.html" class="mr-5 hover:text-gray-900">Citys</a>
-          <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+          <a
+            class="nav-link-hover mr-2"
+            href="index.html"
+            class="mr-5 hover:text-gray-900"
+            >Home</a
+          >
+          <a
+            class="nav-link-hover mr-2"
+            href="cities.html"
+            class="mr-5 hover:text-gray-900"
+            >Citys</a
+          >
+          <a
+            class="nav-link-hover mr-2"
+            href="about.html"
+            class="mr-5 hover:text-gray-900"
+            >About</a
+          >
           <div class="relative mt-4 md:mt-0">
             <div class="flex items-center">
               <span onclick="toggleDarkMode()">
@@ -66,11 +81,12 @@
         </nav>
       </div>
     </header>
-    <section class="body-font relative">
+    <section class="body-font hero-container">
       <div class="min-h-screen grid grid-cols-1">
         <div class="relative min-h-[100px] sm:block hero-container">
           <div class="absolute inset-0">
             <script
+              class="custom-animated-component"
               type="module"
               src="https://unpkg.com/@splinetool/viewer@1.9.25/build/spline-viewer.js"
             ></script>
@@ -121,7 +137,10 @@
               >
                 City of Joy
               </h2>
-              <h1 class="text-3xl title-font font-medium mb-1 text-gray-900">
+              <h1
+                id="custom-font"
+                class="text-3xl title-font font-medium mb-1 text-gray-900"
+              >
                 Iowa State
               </h1>
               <p class="leading-relaxed pt-6 text-gray-600">

@@ -1,0 +1,41 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark-theme {
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#custom-font {
+  font-family: sans-serif;
+}
+
+.nav-link-hover:hover {
+  color: #3b82f6;
+  transition: color 0.3;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.custom-animated-component {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.float-left {
+  float: left;
+}

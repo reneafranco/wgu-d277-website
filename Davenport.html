@@ -30,11 +30,26 @@
           <span class="ml-3 text-xl">Iowa State</span>
         </a>
         <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+          class="md:ml-auto flex flex-wrap mx-2 items-center text-base justify-center"
         >
-          <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
-          <a href="cities.html" class="mr-5 hover:text-gray-900">Citys</a>
-          <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+          <a
+            class="nav-link-hover mr-2"
+            href="index.html"
+            class="mr-5 hover:text-gray-900"
+            >Home</a
+          >
+          <a
+            class="nav-link-hover mr-2"
+            href="cities.html"
+            class="mr-5 hover:text-gray-900"
+            >Citys</a
+          >
+          <a
+            class="nav-link-hover mr-2"
+            href="about.html"
+            class="mr-5 hover:text-gray-900"
+            >About</a
+          >
           <div class="relative mt-4 md:mt-0">
             <div class="flex items-center">
               <span onclick="toggleDarkMode()">
@@ -76,7 +91,7 @@
                 CITY NAME
               </h2>
               <h1 class="text-3xl title-font font-medium mb-4 text-gray-900">
-                {{ city?.name }}
+                Davenport
               </h1>
               <div class="flex mb-4">
                 <a
@@ -116,12 +131,12 @@
                       <td
                         class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                       >
-                        {{ city?.population }}
+                        102,000
                       </td>
                       <td
                         class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                       >
-                        {{ city?.populationDensity }}
+                        950 people/km²
                       </td>
                     </tr>
                     <tr>
@@ -133,12 +148,12 @@
                       <td
                         class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                       >
-                        {{ city?.yearIncorporated }}
+                        1836
                       </td>
                       <td
                         class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                       >
-                        {{ city?.area }}
+                        160 km²
                       </td>
                     </tr>
                     <tr>
@@ -150,7 +165,7 @@
                       <td
                         class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                       >
-                        {{ city?.region }}
+                        Eastern
                       </td>
                     </tr>
                     <tr>
@@ -162,7 +177,7 @@
                       <td
                         class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                       >
-                        {{ city?.classification }}
+                        Urban
                       </td>
                     </tr>
                     <tr>
@@ -174,7 +189,7 @@
                       <td
                         class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
                       >
-                        {{ city?.averageIncome }}
+                        5% below state average
                       </td>
                     </tr>
                   </tbody>
@@ -184,8 +199,8 @@
 
             <div class="w-full mt-6">
               <img
-                alt="City Image"
-                [src]="city?.imageUrl"
+                alt="View of Davenport skyline"
+                src="assets/Davenport.jpeg"
                 class="object-cover w-full h-auto rounded"
               />
             </div>

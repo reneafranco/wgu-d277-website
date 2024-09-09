@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Tailwind CSS</title>
-     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -30,11 +30,26 @@
           <span class="ml-3 text-xl">Iowa State</span>
         </a>
         <nav
-          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+          class="md:ml-auto flex flex-wrap mx-2 items-center text-base justify-center"
         >
-          <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
-          <a href="cities.html" class="mr-5 hover:text-gray-900">Citys</a>
-          <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+          <a
+            class="nav-link-hover mr-2"
+            href="index.html"
+            class="mr-5 hover:text-gray-900"
+            >Home</a
+          >
+          <a
+            class="nav-link-hover mr-2"
+            href="cities.html"
+            class="mr-5 hover:text-gray-900"
+            >Citys</a
+          >
+          <a
+            class="nav-link-hover mr-2"
+            href="about.html"
+            class="mr-5 hover:text-gray-900"
+            >About</a
+          >
           <div class="relative mt-4 md:mt-0">
             <div class="flex items-center">
               <span onclick="toggleDarkMode()">
@@ -75,14 +90,16 @@
               <div class="rounded-lg h-64 overflow-hidden">
                 <img
                   class="object-cover object-center h-full w-full"
-                  src="city1.jpg"
+                  src="assets/des-moines.webp"
                 />
               </div>
               <div class="flex-grow pt-6">
-                <h2 class="text-lg title-font font-medium mb-2">City 1</h2>
-                <p class="leading-relaxed text-base">Description for city 1.</p>
+                <h2 class="text-lg title-font font-medium mb-2">Des Moines</h2>
+                <p class="leading-relaxed text-base">
+                  Capital city of Iowa, known for its vibrant cultural scene and
+                  bustling downtown.
+                </p>
                 <a
-                  target="_blank"
                   href="DesMoines.html"
                   class="mt-3 text-blue-500 inline-flex items-center"
                   >Learn More
@@ -105,14 +122,18 @@
               <div class="rounded-lg h-64 overflow-hidden">
                 <img
                   class="object-cover object-center h-full w-full"
-                  src="city2.jpg"
+                  src="assets/cedar-rapids.jpg"
                 />
               </div>
               <div class="flex-grow pt-6">
-                <h2 class="text-lg title-font font-medium mb-2">City 2</h2>
-                <p class="leading-relaxed text-base">Description for city 2.</p>
+                <h2 class="text-lg title-font font-medium mb-2">
+                  Cedar Rapids
+                </h2>
+                <p class="leading-relaxed text-base">
+                  A city known for its historic downtown and vibrant arts
+                  community.
+                </p>
                 <a
-                  target="_blank"
                   href="CedarRapids.html"
                   class="mt-3 text-blue-500 inline-flex items-center"
                   >Learn More
@@ -135,15 +156,17 @@
               <div class="rounded-lg h-64 overflow-hidden">
                 <img
                   class="object-cover object-center h-full w-full"
-                  src="city3.jpg"
+                  src="assets/Davenport.jpeg"
                 />
               </div>
               <div class="flex-grow pt-6">
-                <h2 class="text-lg title-font font-medium mb-2">City 3</h2>
-                <p class="leading-relaxed text-base">Description for city 3.</p>
+                <h2 class="text-lg title-font font-medium mb-2">Davenport</h2>
+                <p class="leading-relaxed text-base">
+                  Part of the Quad Cities region, known for its historical
+                  landmarks and riverfront.
+                </p>
                 <a
-                  target="_blank"
-                  href="Davenport.html
+                  href="Davenport.html"
                   class="mt-3 text-blue-500 inline-flex items-center"
                   >Learn More
                   <svg

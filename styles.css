@@ -30,6 +30,9 @@ body {
   position: absolute;
 }
 
+.absolute {
+  position: absolute;
+}
 a {
   text-decoration: none;
 }
